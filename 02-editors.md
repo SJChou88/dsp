@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Vim. I've used vim before although on a windows machine with the features fully setup. I look forward to learning how to use it more.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Spyder. I used spyder before. Since it's designed for python, it has a console section for running snippets of code which is a feature I really like. I also enjoy using the variable explorer for help debugging certain parts of code. I don't really know many shortcuts or customizations yet but I will revisit in the future.
 
  
