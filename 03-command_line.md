@@ -30,8 +30,9 @@ ls -ld .??* -     /* lists only hidden files
 cp filename directoryname/ - copys a file with filename into directory with directoryname
 cat > filename.txt - creates a txt file with filename filename and can stream in text. close with ctrl D
 man cmdname - displays the manual for a cmd with name command name
+
 ---
-dfs
+
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
@@ -50,6 +51,7 @@ ls -lh lists in long format with unit suffixes for file size
 ls -lah lists all contents in long format with unit suffixes for file sizes
 ls -t sorts with most recently modified displayed first
 ls -Glp lists in long format with colorized output and appends a / to directory names
+
 ---
 
 ### Q3.  More List Files in Unix  
