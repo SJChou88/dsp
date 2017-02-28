@@ -19,17 +19,17 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > PWD - shows current working directory path
-mkdir - creates a directory
-rmdir - deletes a directory
-touch filename - creates an empty file with the name filename
-rm filename - removes a file with the filename filename
-mv oldfilename newfilename - renames a file with filename oldfilename to filename newfilename
-ls -a - lists all files including hidden files
-ls -ld .??* -     /* lists only hidden files
-cp filename directoryname/ - copys a file with filename into directory with directoryname
-cat > filename.txt - creates a txt file with filename filename and can stream in text. close with ctrl D
-man cmdname - displays the manual for a cmd with name command name
+> > PWD - shows current working directory path  
+mkdir - creates a directory  
+rmdir - deletes a directory  
+touch filename - creates an empty file with the name filename  
+rm filename - removes a file with the filename filename  
+mv oldfilename newfilename - renames a file with filename oldfilename to filename newfilename  
+ls -a - lists all files including hidden files  
+ls -ld .??* - lists only hidden files  
+cp filename directoryname/ - copys a file with filename into directory with directoryname  
+cat > filename.txt - creates a txt file with filename filename and can stream in text. close with ctrl D  
+man cmdname - displays the manual for a cmd with name command name  
 
 ---
 
@@ -44,13 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > ls lists the contents of a directory
-ls -a lists all the contents of a directory
-ls -l lists in long format. outputs a total sum of the file sizes
-ls -lh lists in long format with unit suffixes for file size
-ls -lah lists all contents in long format with unit suffixes for file sizes
-ls -t sorts with most recently modified displayed first
-ls -Glp lists in long format with colorized output and appends a / to directory names
+> > ls lists the contents of a directory  
+ls -a lists all the contents of a directory  
+ls -l lists in long format. outputs a total sum of the file sizes  
+ls -lh lists in long format with unit suffixes for file size  
+ls -lah lists all contents in long format with unit suffixes for file sizes  
+ls -t sorts with most recently modified displayed first  
+ls -Glp lists in long format with colorized output and appends a / to directory names  
 
 ---
 
@@ -58,20 +58,18 @@ ls -Glp lists in long format with colorized output and appends a / to directory 
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > ls -1
-ls -t
-ls -l
-ls -G
+> > ls -1  
+ls -t  
+ls -l  
+ls -G  
 ls -a
+
 ---
 
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs splits an input list into sublists for a command to be executed on it
-find . -name '*.c' | xargs grep 'stdlib.h'
-*/ This will look up file ending with .c that have stdlib.h inside of them
-
- 
-
+> > xargs splits an input list into sublists for a command to be executed on it  
+find . -name '*.c' | xargs grep 'stdlib.h'  
+This will look up file ending with .c that have stdlib.h inside of them
