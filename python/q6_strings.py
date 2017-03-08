@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return("Number of donuts: " + str(count))
+    elif count >= 10:
+        return("Number of donuts: many")
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return("")
+    else:
+        return(s[:2]+s[-2:])
 
 
 def fix_start(s):
@@ -56,7 +62,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    wildcard = s[:1]
+    return(wildcard+s[1:].replace(wildcard,"*"))
 
 
 def mix_up(a, b):
@@ -74,7 +81,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return(b[:2]+a[2:]+" "+a[:2]+b[2:])
 
 
 def verbing(s):
@@ -91,7 +98,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    slength = len(s)
+    if slength > 3:
+        if s[-3:] == 'ing':
+            s = s+'ly'
+        else:
+            s = s+'ing'
+    return(s)
 
 
 def not_bad(s):
@@ -111,9 +124,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    notpos = s.find("not")
+    badpos = s.find("bad")
+    if notpos < badpos:
+        return(s[:notpos]+'good'+s[badpos+3:])
+    else:
+        return(s)
 
-
+from math import floor
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -130,4 +148,8 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    afront = a[:floor((len(a)+1)/2)]
+    aback = a[floor((len(a)+1)/2):]
+    bfront = b[:floor((len(b)+1)/2)]
+    bback = b[floor((len(b)+1)/2):]
+    return(afront+bfront+aback+bback)
