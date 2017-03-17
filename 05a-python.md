@@ -30,8 +30,9 @@ Set example :
 ```python  
 set_example = {3, 4, 5, 8}  
 3 in set_example  
-```  
+```
 Sets should be quicker at finding an element as they are unique, while in a list elements are not necessarily unique.  
+
 ---
 
 ### Q3. Lambda Function
@@ -42,7 +43,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 lambda example :  
 ```python  
 sorted(example_tuples, key = lambda ex: ex[1]) #Sorted by index 1  
-``` 
+```
 
 ---
 
@@ -54,15 +55,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 ```python  
 lc_example = [x**2 for x in range(10)]  
 map_example = list(map(lambda x: x**2, range(10)))  
-
-lc_example2 = [x for x in lc_example if x % 2 == 0]  
+lc_example2 = [x for x in lc_example if x % 2 == 0]   
 filter_example = list(filter(lambda x: x % 2 == 0, lc_example))  
 ```  
-
 Map applies to a function all the items in the input_list.  Filter creates a list of elements for which a function returns true. The functions have fairly different purposes.  
-
 ```python  
-set_example = { x**2 for x in range(10)}  
+set_example = {x**2 for x in range(10)}  
 dict_example = {x:x**2 for x in range(10)}  
 ```  
 
