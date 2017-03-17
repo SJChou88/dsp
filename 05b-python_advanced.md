@@ -35,7 +35,7 @@ MA|1
 
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->>
+>>  
 Title | Frequency  
 ----- | ---------  
 associate professor|12  
@@ -79,17 +79,15 @@ bryanma@upenn.edu
 ```
 faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']],
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
-```my [['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
-Bilker [['PhD', 'Professor', 'warren@upenn.edu']]
-Bryan [['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]
+```
 Print the first 3 key and value pairs of the dictionary:
 
 >>
-Key|Value
----|-----
-Bellamy|[['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
-Bilker|[['PhD', 'Professor', 'warren@upenn.edu']]
-Bryan|[['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]
+Key|Value  
+---|-----  
+Bellamy|[['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]  
+Bilker|[['PhD', 'Professor', 'warren@upenn.edu']]  
+Bryan|[['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]  
 
 #### Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -99,21 +97,23 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> This seems to default to an ordered list the way I programmed it. I can see that it is sorted by the first name in variable explorer in spyder though.   
-Key|Value
----|-----
-('Alisa', 'Stephens')|[['PhD', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]
-('Andrea', 'Troxel')|[['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']]
+>>  
+Key|Value  
+---|-----  
+('Alisa', 'Stephens')|[['PhD', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]  
+('Andrea', 'Troxel')|[['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']]  
 ('Benjamin', 'French')|[['PhD', 'Associate Professor', 'bcfrench@mail.med.upenn.edu']]  
 
 
 #### Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
 >>
-Key|Value---|-----
-('Scarlett', 'Bellamy')|[['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
-('Warren', 'Bilker')|[['PhD', 'Professor', 'warren@upenn.edu']]
+Key|Value  
+---|-----  
+('Scarlett', 'Bellamy')|[['ScD', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]  
+('Warren', 'Bilker')|[['PhD', 'Professor', 'warren@upenn.edu']]  
 ('Matthew', 'Bryan')|[['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]  
+
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
 --- 
